@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.left-col,
+.right-col {
+    flex-basis: 50%;
+    height: 100vh;
+    position: relative;
+}
+
+.logo {
+    display: block;
+    width: 228px;
+    margin-top: 54px;
+    margin-left: 25px;
+}
+
+.content {
+    max-width: 500px;
+    position: absolute;
+    top: 26%;
+    left: 84px;
+    /* max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 115px;
+    transform: translateY(-50%); */
+}
+
+.content h1 {
+    color: #0f7247;
+    font-size: 60px;
+    line-height: 70px;
+    margin: 25px 0;
+}
+
+.content p {
+    color: #777;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 60px;
+}
+
+button {
+    width: 200px;
+    border: none;
+    background: #05a35f;
+    box-shadow: 10px 10px 10px 2px rgb(184, 237, 225);
+    padding: 25px 0;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+}
+
+.right-col .slider {
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.slider-content {
+    width: 100%;
+    height: 40%;
+    background: #0f7247;
+    padding-left: 30px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.slider-content h2 {
+    font-size: 30px;
+    font-weight: 100;
+    color: #fff;
+}
+
+.slider-content p {
+    color: #bfffdd;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 20px;
+}
+
+hr {
+    border: none;
+    width: 300px;
+    height: 2px;
+    background: #b5e3cf;
+    margin: 20px 0 30px;
+}
+
+.controller {
+    width: 120px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controller img {
+    width: 45px;
+    cursor: pointer;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 30px;
+    background: #b5e3cf;
+}
+
+#BackBtn:hover,
+#NextBtn:hover {
+    background: rgba(207, 54, 54, 0.5);
+}
+
+/* media query for small screen */
+
+@media only screen and (max-width: 1250px) {
+    .logo {
+        margin-left: 0px;
+    }
+
+    .content {
+        padding: 20px;
+        top: 26%;
+        left: 50px;
+    }
+
+    .content h1 {
+        font-size: 56px;
+        line-height: 65px;
+        margin: 23px 5px;
+    }
+
+    .content p {
+        font-size: 17px;
+        line-height: 28px;
+        margin-bottom: 55px;
+    }
+
+    button {
+        width: 185px;
+        box-shadow: 10px 10px 10px 2px rgb(211 239 233 / 100%);
+        padding: 25px 0;
+        font-size: 16px;
+    }
+
+    .slider-content h2 {
+        font-size: 29px;
+    }
+
+    .slider-content p {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .logo {
+        height: 118px;
+        width: 207px;
+        margin: 30px auto;
+    }
+
+    .left-col,
+    .right-col {
+        flex-basis: 100%;
+        height: 100vh;
+        /* height: 85vh; */
+    }
+
+    .content {
+        left: 0;
+        margin-left: 136px;
+        margin-right: 136px;
+        padding: 20px;
+        text-align: center;
+        top: 19%;
+    }
+
+    .content h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .content p {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 55px;
+    }
+
+    .right-col .slider {
+        height: auto;
+    }
+
+    .slider-content {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .logo {
+        height: 118px;
+        width: 207px;
+        margin: 30px auto;
+    }
+
+    .left-col,
+    .right-col {
+        flex-basis: 100%;
+        height: 100vh;
+        /* height: 95vh; */
+    }
+
+    .content {
+        left: 0;
+        margin-left: 136px;
+        margin-right: 136px;
+        padding: 20px;
+        text-align: center;
+        top: 19%;
+    }
+
+    .content h1 {
+        font-size: 47px;
+        line-height: 47px;
+    }
+
+    .content p {
+        font-size: 19px;
+        line-height: 29px;
+        margin-bottom: 45px;
+    }
+
+    button {
+        width: 185px;
+        box-shadow: 10px 10px 10px 2px rgb(211 239 233 / 100%);
+        padding: 25px 0;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .logo {
+        height: 96px;
+        width: 178px;
+        margin: 19px auto;
+    }
+
+    .left-col,
+    .right-col {
+        flex-basis: 100%;
+        height: 100vh;
+        /* height: 95vh; */
+    }
+
+    .content {
+        margin-left: 120px;
+        margin-right: 120px;
+        top: 13%;
+    }
+
+    .content h1 {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    .content p {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 41px;
+    }
+
+    button {
+        width: 185px;
+        box-shadow: 10px 10px 10px 2px rgb(211 239 233 / 100%);
+        padding: 25px 0;
+        font-size: 16px;
+    }
+}
